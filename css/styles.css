@@ -59,25 +59,37 @@
   align-items: center;
 }
 
-.buttons-webstudio {
+/*Logo*/
+
+.studio-header__logo {
+  padding-right: 93px;
+}
+
+.logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: flex;
+}
+
+.logo--first-color{
+  color: var(--brand-mlight-color);
+}
+
+.logo--two-color{
   color: var(--text-main-color);
-  display: flex;
-  padding-right: 93px;
 }
 
-.buttons-navi {
+/*Navi*/
+.navi {
   display: flex;
-  list-style-type: none;
+  list-style: none;
 }
 
-.buttons-navi-link {
-  margin-right: 46px;
+.navi__item {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -86,6 +98,38 @@
   color: #212121;
 }
 
+.navi__item--start{
+  margin-right: 46px;
+}
+
+.navi__links {
+  text-decoration: none;
+  position: relative;
+  color: var(--text-main-color);
+  transition: var(--transition);
+  transition-property: color, background-color, box-shadow;
+}
+
+.navi__links--underline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 4px solid var(--brand-mlight-color);
+  border-radius: 2px;
+  width: 100%;
+  bottom: -33px;
+  left: 0;
+}
+
+.navi__links:active, .navi__links:hover, .navi__links:focus{
+  color: var(--brand-mlight-color);
+}
+
+.navi__links:visited{
+  color: var(--text-main-color);
+}
+
+/*Contact*/
 .buttons-contact {
   display: flex;
   list-style-type: none;
@@ -108,16 +152,7 @@
   fill: #afb1b8;
 }
 
-a.links.underline {
-  position: relative;
-}
 
-.links {
-  text-decoration: none;
-  transition-property: color, background-color, box-shadow;
-  color: var(--text-main-color);
-  transition: var(--transition);
-}
 
 .buttons-contact-link {
   transition: var(--transition);
@@ -129,17 +164,6 @@ a.links.underline {
 .buttons-contact-link:focus {
   fill: #2196f3;
   color: #2196f3;
-}
-
-.underline::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-top: 4px solid var(--brand-mlight-color);
-  border-radius: 2px;
-  width: 100%;
-  bottom: -33px;
-  left: 0;
 }
 
 /*baner*/
