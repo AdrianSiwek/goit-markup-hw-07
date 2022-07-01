@@ -135,7 +135,7 @@
 
 .top-contact__link {
   color: var(--brand-contact-color);
-  text-decoration:none;
+  text-decoration: none;
   transition: var(--transition);
   transition-property: color, fill;
 }
@@ -194,7 +194,15 @@
   background-size: 1600px;
 }
 
-.description-name {
+.description__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: auto;
+}
+
+.description__name {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;
@@ -206,24 +214,23 @@
   max-width: 696px;
 }
 
-.description .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-width: auto;
-}
-
-.description-click {
+/*Button*/
+.button {
   width: 200px;
   height: 50px;
-  margin-top: 30px;
   cursor: pointer;
   background: var(--brand-mlight-color);
   border: 0px;
   box-shadow: 0 px 4 px 4 px rgba (0, 0, 0, 0, 15);
   border-radius: 4px;
-  font-family: "Roboto";
+}
+
+.button__background {
+  margin-top: 30px;
+}
+
+.button__name{
+font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
