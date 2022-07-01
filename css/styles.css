@@ -40,12 +40,6 @@
   padding-bottom: 94px;
 }
 
-.links:active,
-.links:hover,
-.links:focus {
-  color: var(--brand-mlight-color);
-}
-
 /*header*/
 .studio-header {
   height: 80px;
@@ -75,11 +69,11 @@
   display: flex;
 }
 
-.logo--first-color{
+.logo--first-color {
   color: var(--brand-mlight-color);
 }
 
-.logo--two-color{
+.logo--two-color {
   color: var(--text-main-color);
 }
 
@@ -98,7 +92,7 @@
   color: #212121;
 }
 
-.navi__item--start{
+.navi__item--start {
   margin-right: 46px;
 }
 
@@ -121,51 +115,70 @@
   left: 0;
 }
 
-.navi__links:active, .navi__links:hover, .navi__links:focus{
+.navi__links:active,
+.navi__links:hover,
+.navi__links:focus {
   color: var(--brand-mlight-color);
 }
 
-.navi__links:visited{
-  color: var(--text-main-color);
-}
-
 /*Contact*/
-.buttons-contact {
+.top-contact {
   display: flex;
-  list-style-type: none;
+  list-style: none;
   margin-left: auto;
   margin-right: 12px;
-  color: var(--brand-contact-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.buttons-contact a {
-  text-decoration: none;
+.top-contact__link {
   color: var(--brand-contact-color);
-  margin-left: 50px;
-}
-
-.icon-cont {
-  fill: #afb1b8;
-}
-
-
-
-.buttons-contact-link {
+  text-decoration:none;
   transition: var(--transition);
   transition-property: color, fill;
 }
 
-.buttons-contact-link:active,
-.buttons-contact-link:hover,
-.buttons-contact-link:focus {
+.top-contact__link:active,
+.top-contact__link:hover,
+.top-contact__link:focus {
   fill: #2196f3;
   color: #2196f3;
 }
 
+.top-contact__object {
+  transition: var(--transition);
+  transition-property: fill;
+}
+.top-contact__object:active,
+.top-contact__object:hover,
+.top-contact__object:focus {
+  fill: var(--brand-main-color);
+}
+.top-contact__object:hover .top-contact__icon {
+  fill: var(--brand-main-color);
+}
+
+.top-contact__icon {
+  fill: #afb1b8;
+  transition: var(--transition);
+  transition-property: fill;
+}
+
+.top-contact__icon--phone {
+  margin-right: 10px;
+  margin-bottom: -1px;
+}
+
+.top-contact__icon--mail {
+  margin-right: 10px;
+  margin-bottom: -3px;
+}
+
+.top-contact__link--end {
+  margin-left: 50px;
+}
 /*baner*/
 .description {
   display: flex;

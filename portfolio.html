@@ -18,42 +18,39 @@
   <body class="studio">
     <header class="studio-header">
       <div class="container">
-        <a class="logo" href="./index.html"
-          ><span class="highlight">Web</span><span>Studio</span></a
+        <a class="logo studio-header__logo" href="./index.html"
+          ><span class="logo--first-color">Web</span><span class="logo--two-color">Studio</span></a
         >
-
         <nav>
-          <ul class="buttons-navi" style="list-style: none">
-            <li class="buttons-navi-link">
-              <a class="links" href="./index.html">Agencja</a>
+          <ul class="navi">
+            <li class="navi__item navi__item--start">
+              <a class="navi__links navi__links--underline" href="./index.html">Agencja</a>
             </li>
-            <li class="buttons-navi-link">
-              <a class="links underline" href="./portfolio.html">Portfolio</a>
+            <li class="navi__item navi__item--start">
+              <a class="navi__links" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="buttons-navi-link">
-              <a class="links" href="#">Kontakt</a>
+            <li class="navi__item">
+              <a class="navi__links" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <ul class="buttons-contact" style="list-style: none">
-          <li class="icon-cont">
-            <a class="buttons-contact-link" href="mailto:info@example.com">
-              <svg
+        <ul class="top-contact">
+          <li class="top-contact__object">
+            <a class="top-contact__link" href="mailto:info@example.com">
+              <svg class="top-contact__icon top-contact__icon--mail"
                 width="16"
                 height="12"
-                style="margin-right: 10px; margin-bottom: -1px"
               >
                 <use href="./image/icons.svg#icon-envelope"></use>
               </svg>
               info@example.com</a
             >
           </li>
-          <li class="icon-cont">
-            <a class="buttons-contact-link" href="tel:+48111111111"
-              ><svg
+          <li class="top-contact__object">
+            <a class="top-contact__link top-contact__link--end" href="tel:+48111111111"
+              ><svg class="top-contact__icon top-contact__icon--phone"
                 width="10"
                 height="16"
-                style="margin-right: 10px; margin-bottom: -3px"
               >
                 <use href="./image/icons.svg#icon-smartphone"></use>
               </svg>
