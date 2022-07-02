@@ -326,7 +326,7 @@
 }
 
 /*Nasz Zespół*/
-.team {
+.section__team {
   background: #f5f4fa;
 }
 
@@ -340,13 +340,13 @@
   margin-bottom: 50px;
 }
 
-.team-component {
+.team {
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
-.team-component-person {
+.team__component {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -358,15 +358,15 @@
   background-color: var(--brand-second-color);
 }
 
-.team-component-person:first-child {
+.team__component:first-child {
   margin-left: 0px;
 }
 
-.team-component-person:last-child {
+.team__component:last-child {
   margin-right: 0px;
 }
 
-.names {
+.team__names {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -376,9 +376,10 @@
   letter-spacing: 0.03em;
   margin-top: 30px;
   margin-bottom: 10px;
+  color: var(--text-main-color);
 }
 
-.position {
+.team__position {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -389,7 +390,7 @@
   color: var(--brand-contact-color);
 }
 
-.icone {
+.team__icone {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -397,13 +398,13 @@
   margin-right: 10px;
 }
 
-.icone-style {
+.team__icone--style {
   display: flex;
   justify-content: center;
   padding-right: 10px;
 }
 
-.elipse {
+.team__icone--elipse {
   display: flex;
   width: 44px;
   height: 44px;
@@ -412,16 +413,13 @@
   justify-content: center;
   align-items: center;
   fill: var(--icon-color);
-}
-
-.elipse {
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition-property: fill, background-color;
 }
 
-.elipse:active,
-.elipse:hover,
-.elipse:focus {
+.team__icone--elipse:active,
+.team__icone--elipse:hover,
+.team__icone--elipse:focus {
   fill: var(--brand-second-color);
   border-radius: 50%;
   background-color: #2196f3;
