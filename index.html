@@ -502,15 +502,15 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
+        <button type="button" class="modal__close--btn" data-modal-close>X</button>
         <form class="form">
           <label class="form-label">
-            <span class="modal-topic"
+            <span class="form-label__topic"
               >Zostaw swoje dane w formularzu poniżej</span
             >
           </label>
           <label class="form-label">
-            <span class="label-text">Imię</span>
+            <span class="form-label__text">Imię</span>
             <svg class="icon-formating-name" width="12" height="12">
               <use href="./image/icons.svg#icon-people"></use>
             </svg>
@@ -525,7 +525,7 @@
           </label>
 
           <label class="form-label">
-            <span class="label-text">Telefon</span>
+            <span class="form-label__text">Telefon</span>
             <svg class="icon-formating-phone" width="12" height="12">
               <use href="./image/icons.svg#icon-phones"></use>
             </svg>
@@ -540,7 +540,7 @@
           </label>
 
           <label class="form-label">
-            <span class="label-text">Email</span>
+            <span class="form-label__text">Email</span>
             <svg class="icon-formating-email" width="15" height="12">
               <use href="./image/icons.svg#icon-kop"></use>
             </svg>
@@ -553,7 +553,7 @@
             />
           </label>
           <label class="form-label">
-            <span class="label-text">Komentarz</span>
+            <span class="form-label__text">Komentarz</span>
             <textarea
               name="feedback"
               rows="6"
@@ -562,19 +562,19 @@
           </label>
           <div class="policy">
             <input
-              class="modal-form-policy visually-hidden"
+              class="modal-form__policy visually-hidden"
               type="checkbox"
               name="policy"
               id="user-policy"
               required
             />
-            <label for="user-policy" class="modal-form-policy-text">
+            <label for="user-policy" class="modal-form__policy--text">
               Oświadczam iż akceptuję
-              <a class="policy-link" href="#regulamin">Regulamin</a> i
-              <a class="policy-link" href="#polityka">Politykę Prywatności</a>.
+              <a class="policy__link" href="#regulamin">Regulamin</a> i
+              <a class="policy__link" href="#polityka">Politykę Prywatności</a>.
             </label>
           </div>
-          <button class="submit" type="submit">Wyślij</button>
+          <button class="button policy-button" type="submit"><span class="button__name">Wyślij</span></button>
         </form>
       </div>
     </div>
