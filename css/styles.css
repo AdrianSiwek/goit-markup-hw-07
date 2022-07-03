@@ -216,6 +216,9 @@
 
 /*Button*/
 .button {
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
   cursor: pointer;
@@ -462,35 +465,30 @@
 }
 
 /* footer*/
-footer {
+.studio-footer {
   background: var(--brand-two-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
-.information {
+.studio-footer__container {
   display: flex;
   align-items: flex-start;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.highlight {
-  color: var(--brand-mlight-color);
+.information{
+  text-align: left;
 }
 
-.information-web {
-  text-decoration: none;
-  font-family: "Raleway";
+.logo--three-color{
   color: var(--brand-second-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
-.footer-section {
-  padding-bottom: 60px;
-  padding-top: 60px;
+.information__logo{
+  text-align: left;
 }
 
-.information-adres {
+.information__adres {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -499,12 +497,20 @@ footer {
   padding-top: 20px;
   padding-bottom: 9px;
 }
+.footer-information{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  list-style: none;
+}
 
-.container-contact a {
+.footer-information__item a {
   color: var(--brand-contact-color);
 }
 
-.information-contact-link {
+.footer-information__link {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -513,19 +519,17 @@ footer {
   text-decoration: none;
   padding-bottom: 9px;
   text-align: left;
-}
-
-.information-contact-link {
   transition: var(--transition);
   transition-property: color;
 }
 
-.information-contact-link:active,
-.information-contact-link:hover,
-.information-contact-link:focus {
+.footer-information__link:active,
+.footer-information__link:hover,
+.footer-information__link:focus {
   color: var(--brand-mlight-color);
 }
 
+/*socialmedia*/
 .socialmedia {
   margin-top: 12px;
   padding-left: 70px;
@@ -533,7 +537,7 @@ footer {
   height: 80px;
 }
 
-.socialmedia-h3 {
+.socialmedia__title {
   text-align: left;
   font-family: "Roboto";
   font-style: normal;
@@ -553,14 +557,14 @@ footer {
   justify-content: space-between;
 }
 
-.light {
+.footer-socialmedia__light {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 10px;
 }
 
-.ellipse {
+.footer-socialmedia__icone {
   display: flex;
   width: 44px;
   height: 44px;
@@ -571,14 +575,14 @@ footer {
   fill: var(--brand-second-color);
 }
 
-.ellipse {
+.footer-socialmedia__icone {
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition-property: fill, background-color;
 }
 
-.ellipse:active,
-.ellipse:hover,
-.ellipse:focus {
+.footer-socialmedia__icone:active,
+.footer-socialmedia__icone:hover,
+.footer-socialmedia__icone:focus {
   border-radius: 50%;
   background-color: #2196f3;
   cursor: pointer;
@@ -592,7 +596,7 @@ footer {
   margin-left: 78px;
 }
 
-.newsletter-tittle {
+.newsletter__tittle {
   margin: 0;
   padding: 0;
   text-align: left;
@@ -607,14 +611,14 @@ footer {
   margin-left: 78px;
 }
 
-.newsletter-bag {
+.newsletter__bag {
   display: inline-flex;
   justify-content: center;
   align-content: center;
   margin-top: 20px;
 }
 
-.newsletter-bag-input {
+.newsletter__input {
   width: 358px;
   height: 50px;
   padding: 15px;
@@ -628,49 +632,12 @@ footer {
   color: var(--brand-second-color);
 }
 
-.newsletter-button {
-  width: 200px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
+.newsletter__button {
   align-items: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background: var(--brand-mlight-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-.newsletter-button > svg {
+.newsletter__icon {
   margin-left: 24px;
-}
-
-.submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 124px;
-  margin-top: 30px;
-  width: 200px;
-  height: 50px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  color: var(--brand-second-color);
-  background-color: var(--brand-mlight-color);
-  border-radius: 4px;
-  transition: var(--transition);
-  transition-property: box-shadow;
-  cursor: pointer;
 }
 
 /*menu*/
