@@ -432,7 +432,7 @@
   list-style: none;
 }
 
-.client-item {
+.client__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,16 +443,22 @@
   fill: #afb1b8;
 }
 
-.client-item {
+.client__item {
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition-property: fill, border-color;
 }
 
-.client-item:active,
-.client-item:hover,
-.client-item:focus {
+.client__item:active,
+.client__item:hover,
+.client__item:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+.client__icon{
+  fill:var(--icon-color);
+  transition: var(--transition);
+  transition-property: fill;
 }
 
 /* footer*/
