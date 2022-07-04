@@ -263,7 +263,7 @@
 .elaboration {
   display: inline-flex;
   justify-content: center;
-  flex-basis: calc((100%-30px) / 4);
+  flex-basis: calc(1170 / 4);
   list-style: none;
 }
 
@@ -279,7 +279,7 @@
   background-color: #f5f4fa;
   border-radius: 4px;
   list-style-type: none;
-  flex-basis: calc((100%-30px) / 4);
+  flex-basis: calc(1170 / 4);
 }
 
 .elaboration__item {
@@ -956,10 +956,6 @@
   position: absolute;
   left: 12px;
   top: 200px;
-}
-
-.submit:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* checkbox stylizacja*/
