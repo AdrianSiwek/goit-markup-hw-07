@@ -518,10 +518,6 @@
   list-style: none;
 }
 
-.footer-information__item a {
-  color: var(--brand-contact-color);
-}
-
 .footer-information__link {
   font-family: "Roboto";
   font-weight: 400;
@@ -531,6 +527,7 @@
   text-decoration: none;
   padding-bottom: 9px;
   text-align: left;
+  color: var(--brand-contact-color);
   transition: var(--transition);
   transition-property: color;
 }
