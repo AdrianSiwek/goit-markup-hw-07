@@ -1,7 +1,6 @@
 .elaboration {
   display: inline-flex;
   justify-content: center;
-  flex-basis: calc(1170 / 4);
   list-style: none;
 
 
@@ -17,7 +16,7 @@
   background-color: #f5f4fa;
   border-radius: 4px;
   list-style-type: none;
-  flex-basis: calc(1170 / 4);
+  flex-basis: calc(1170px / 4);
 }
 
 &__item {
