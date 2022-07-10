@@ -40,9 +40,9 @@
     transition-property: color;
 
 
-&:active,
-&:hover,
-&:focus {
+&--hover:active,
+&--hover:hover,
+&--hover:focus {
     color: var(--brand-mlight-color);
 }
 }

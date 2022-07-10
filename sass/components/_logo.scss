@@ -23,15 +23,15 @@
             color: var(--brand-mlight-color);
         }
     }
-        &--first-color {
+        &__span--first-color {
             color: var(--brand-mlight-color);
         }
     
-        &--two-color {
+        &__span--two-color {
             color: var(--text-main-color);
         }
     
-        &--three-color {
+        &__span--three-color {
             color: var(--brand-second-color);
         }
 }
