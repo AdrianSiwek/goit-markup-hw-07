@@ -6,6 +6,19 @@
     letter-spacing: 0.03em;
     text-decoration: none;
 
+    &__span--first-color {
+        color: var(--brand-mlight-color);
+    }
+    
+    &__span--two-color {
+        color: var(--text-main-color);
+        
+    }
+       
+    &__span--three-color {
+        color: var(--brand-second-color);
+    }
+    
     &__link {
             text-decoration: none;
             color: var(--text-main-color);
@@ -23,15 +36,4 @@
             color: var(--brand-mlight-color);
         }
     }
-        &__span--first-color {
-            color: var(--brand-mlight-color);
-        }
-    
-        &__span--two-color {
-            color: var(--text-main-color);
-        }
-    
-        &__span--three-color {
-            color: var(--brand-second-color);
-        }
 }

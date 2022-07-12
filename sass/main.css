@@ -50,10 +50,11 @@
 }
 
 .container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  padding: 0 15px;
 }
 
 .policy {
@@ -302,6 +303,15 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+.logo__span--first-color {
+  color: var(--brand-mlight-color);
+}
+.logo__span--two-color {
+  color: var(--text-main-color);
+}
+.logo__span--three-color {
+  color: var(--brand-second-color);
+}
 .logo__link {
   text-decoration: none;
   color: var(--text-main-color);
@@ -313,15 +323,6 @@
 }
 .logo__link:active, .logo__link:hover, .logo__link:focus {
   color: var(--brand-mlight-color);
-}
-.logo--first-color {
-  color: var(--brand-mlight-color);
-}
-.logo--two-color {
-  color: var(--text-main-color);
-}
-.logo--three-color {
-  color: var(--brand-second-color);
 }
 
 .navi {
@@ -464,6 +465,7 @@
   margin: 0 -15px;
   list-style: none;
   flex-wrap: wrap;
+  align-items: center;
 }
 .elaboration__icon {
   display: flex;
@@ -476,14 +478,14 @@
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  list-style-type: none;
+  list-style: none;
 }
 .elaboration__item {
   width: 270px;
   margin-left: 15px;
   margin-right: 15px;
 }
-.elaboration__item--name {
+.elaboration__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -491,7 +493,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.elaboration__item--description {
+.elaboration__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -619,18 +621,12 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-}
-.client__item {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   transition-property: fill, border-color;
 }
-.client__item:active, .client__item:hover, .client__item:focus {
+.client__item--hover:active, .client__item--hover:hover, .client__item--hover:focus {
   fill: #2196f3;
   border-color: #2196f3;
-}
-.client__icon {
-  transition: var(--transition);
-  transition-property: fill;
 }
 
 .information {
@@ -670,7 +666,7 @@
   transition: var(--transition);
   transition-property: color;
 }
-.footer-information__link:active, .footer-information__link:hover, .footer-information__link:focus {
+.footer-information__link--hover:active, .footer-information__link--hover:hover, .footer-information__link--hover:focus {
   color: var(--brand-mlight-color);
 }
 
